@@ -1495,3 +1495,144 @@ button:focus-visible {
 @media print {
   .header, .nav-toggle, .hero__visual, .demos-panel { display: none; }
 }
+
+/* ════════════════════════════════════════════════
+   MULTI-PAGE ADDITIONS
+   Inner page hero · CTA strip · Section footer links · Breadcrumb
+════════════════════════════════════════════════ */
+
+/* ── Page Hero (inner pages) ── */
+.page-hero {
+  background: var(--navy-900);
+  padding: 60px 0 64px;
+  position: relative;
+  overflow: hidden;
+}
+.page-hero .hero__grid {
+  position: absolute; inset: 0; z-index: 0;
+}
+.page-hero__inner {
+  position: relative; z-index: 1;
+  max-width: 780px;
+}
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: .78rem; font-weight: 600;
+  color: rgba(255,255,255,.38);
+  margin-bottom: 18px;
+}
+.breadcrumb a {
+  color: rgba(255,255,255,.38); text-decoration: none;
+  transition: color var(--transition);
+}
+.breadcrumb a:hover { color: rgba(255,255,255,.7); }
+.breadcrumb span[aria-hidden] { font-size: .7rem; }
+.breadcrumb span[aria-current] { color: var(--green-400); }
+
+.page-hero__title {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.page-hero__title span { color: var(--green-400); }
+.page-hero__sub {
+  font-size: clamp(.95rem, 1.5vw, 1.08rem);
+  color: rgba(255,255,255,.62);
+  line-height: 1.72;
+  max-width: 580px;
+}
+
+/* ── Link More ── */
+.link-more {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .875rem; font-weight: 700;
+  color: var(--green-600); text-decoration: none;
+  transition: color var(--transition), gap var(--transition);
+}
+.link-more:hover { color: var(--green-400); gap: 10px; }
+.link-more--light { color: var(--green-400); }
+.link-more--light:hover { color: var(--white); }
+
+/* ── Section Footer ── */
+.section-footer {
+  display: flex; justify-content: center;
+  margin-top: 52px; padding-top: 36px;
+  border-top: 1px solid var(--gray-200);
+}
+.section-footer--dark {
+  border-color: rgba(255,255,255,.09);
+}
+
+/* ── CTA Strip ── */
+.cta-strip {
+  background: var(--navy-900);
+  padding: 88px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-strip::before {
+  content: '';
+  position: absolute; top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(42,96,73,.2) 0%, transparent 65%);
+  pointer-events: none;
+}
+.cta-strip .hero__grid {
+  position: absolute; inset: 0; z-index: 0;
+}
+.cta-strip__inner {
+  position: relative; z-index: 1;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.cta-strip__eyebrow {
+  display: inline-block;
+  font-size: .75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--green-100); background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  padding: 5px 14px; border-radius: var(--radius-full);
+  margin-bottom: 20px;
+}
+.cta-strip__title {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  font-weight: 800; color: var(--white);
+  letter-spacing: -.04em; line-height: 1.15;
+  margin-bottom: 16px;
+}
+.cta-strip__sub {
+  font-size: 1rem; color: rgba(255,255,255,.62);
+  line-height: 1.7; margin-bottom: 32px;
+}
+.cta-strip__actions {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 14px;
+}
+.cta-strip__note {
+  font-size: .8rem; color: rgba(255,255,255,.35);
+  margin-top: 18px;
+}
+
+/* ── Homepage preview grids: 3-up on desktop ── */
+.services--preview .services__grid {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px) {
+  .services--preview .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .services--preview .svc-card--featured { grid-column: span 2; }
+}
+@media (min-width: 1000px) {
+  .services--preview .services__grid { grid-template-columns: repeat(3, 1fr); }
+  .services--preview .svc-card--featured { grid-column: span 1; }
+}
+
+/* ── Why preview: 3-col straight on desktop ── */
+.why--preview .why__grid {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px)  { .why--preview .why__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .why--preview .why__grid { grid-template-columns: repeat(3, 1fr); } }

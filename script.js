@@ -1,12 +1,10 @@
 /**
  * Grand River Digital — script.js
- * Final pre-launch · Zero console errors
- * Form routes to both founders simultaneously (see EMAIL ROUTING below)
+ * Multi-page build · Zero console errors
  */
 
 'use strict';
 
-/* ─── HELPERS ─────────────────────────────── */
 const qs  = (sel, ctx = document) => ctx.querySelector(sel);
 const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 const prefersReducedMotion = () =>
@@ -70,6 +68,33 @@ function initMobileNav() {
   });
 }
 
+/* ─── ACTIVE NAV (pathname-based) ────────── */
+function initActiveNav() {
+  const links = qsa('.nav__link');
+  if (!links.length) return;
+
+  const path = window.location.pathname.replace(/\/$/, '') || '/';
+
+  links.forEach(link => {
+    const href = (link.getAttribute('href') || '').replace(/\/$/, '') || '/';
+    let active = false;
+
+    if (href === '/') {
+      active = (path === '' || path === '/');
+    } else {
+      active = path === href || path.startsWith(href + '/');
+    }
+
+    if (active) {
+      link.classList.add('is-active');
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.classList.remove('is-active');
+      link.removeAttribute('aria-current');
+    }
+  });
+}
+
 /* ─── SCROLL REVEAL ──────────────────────── */
 function initReveal() {
   if (prefersReducedMotion()) {
@@ -97,8 +122,6 @@ function initReveal() {
       }
 
       el.classList.add('is-visible');
-
-      // Clear stagger delay after animation so it doesn't linger
       el.addEventListener('transitionend', () => {
         el.style.transitionDelay = '';
       }, { once: true });
@@ -110,27 +133,7 @@ function initReveal() {
   elements.forEach(el => io.observe(el));
 }
 
-/* ─── ACTIVE NAV ─────────────────────────── */
-function initActiveNav() {
-  const sections = qsa('section[id]');
-  const links    = qsa('.nav__link');
-  if (!sections.length || !links.length) return;
-
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      links.forEach(l => l.classList.remove('is-active'));
-      const match = links.find(
-        l => l.getAttribute('href') === `#${entry.target.id}`
-      );
-      if (match) match.classList.add('is-active');
-    });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-
-  sections.forEach(sec => io.observe(sec));
-}
-
-/* ─── SMOOTH SCROLL ──────────────────────── */
+/* ─── SMOOTH SCROLL (same-page anchors only) */
 function initSmoothScroll() {
   qsa('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', e => {
@@ -145,31 +148,7 @@ function initSmoothScroll() {
   });
 }
 
-/* ─── CONTACT FORM ───────────────────────────────────────────────────
- *
- * EMAIL ROUTING — submissions sent to BOTH founders simultaneously.
- *
- * Recipients:
- *   → mason@grandriverdigital.ca   (Mason Mazzocco — Technical & Analytics Lead)
- *   → yick@grandriverdigital.ca    (Yick Siang Yau  — Business & Implementation Lead)
- *
- * Integration: replace the setTimeout simulation below with a real fetch().
- * Recommended services (all support multiple recipients):
- *   - Formspree:  https://formspree.io  — add both emails in dashboard
- *   - EmailJS:    https://emailjs.com   — configure template with two recipients
- *   - Resend API: https://resend.com    — pass array to `to` field
- *
- * Payload structure:
- * {
- *   to:          ['mason@grandriverdigital.ca', 'yick@grandriverdigital.ca'],
- *   replyTo:     formData.email,
- *   name:        formData.name,
- *   business:    formData.business,
- *   description: formData.description,
- *   budget:      formData.budget,
- *   timestamp:   new Date().toISOString()
- * }
- * ─────────────────────────────────────────────────────────────────── */
+/* ─── CONTACT FORM ──────────────────────── */
 function initContactForm() {
   const form      = qs('#contactForm');
   const successEl = qs('#formSuccess');
@@ -177,9 +156,6 @@ function initContactForm() {
 
   const submitBtn = qs('[type="submit"]', form);
   const required  = qsa('[required]', form);
-
-  // Snapshot button children on load so we can restore them exactly
-  // (preserves both the text node AND the SVG icon arrow)
   const btnSnapshot = Array.from(submitBtn.childNodes).map(n => n.cloneNode(true));
 
   function setSubmitting(on) {
@@ -187,7 +163,6 @@ function initContactForm() {
     if (on) {
       submitBtn.textContent = 'Sending…';
     } else {
-      // Restore original content (text + SVG) without innerHTML
       submitBtn.replaceChildren(...btnSnapshot.map(n => n.cloneNode(true)));
     }
   }
@@ -198,7 +173,7 @@ function initContactForm() {
   }
 
   function validateField(field) {
-    const empty   = !field.value.trim();
+    const empty    = !field.value.trim();
     const badEmail = field.type === 'email' && field.value && !field.value.includes('@');
     if (empty || badEmail) {
       field.classList.add('is-error');
@@ -226,7 +201,6 @@ function initContactForm() {
       return;
     }
 
-    // Collect form data
     const formData = {
       name:        qs('#cname', form).value.trim(),
       email:       qs('#cemail', form).value.trim(),
@@ -236,36 +210,9 @@ function initContactForm() {
       timestamp:   new Date().toISOString(),
     };
 
-    // ── EMAIL ROUTING ──────────────────────────────────────────────
-    // Both founders receive the submission simultaneously.
-    // Replace this block with your chosen API integration.
-    //
-    // Example using Formspree (set FORMSPREE_ENDPOINT to your form ID):
-    //
-    //   const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
-    //   fetch(FORMSPREE_ENDPOINT, {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    //     body: JSON.stringify({
-    //       to:          ['mason@grandriverdigital.ca', 'yick@grandriverdigital.ca'],
-    //       replyTo:     formData.email,
-    //       name:        formData.name,
-    //       business:    formData.business,
-    //       description: formData.description,
-    //       budget:      formData.budget,
-    //       timestamp:   formData.timestamp,
-    //     }),
-    //   })
-    //   .then(res => res.json())
-    //   .then(data => { if (data.ok) handleSuccess(); })
-    //   .catch(() => { setSubmitting(false); });
-    // ──────────────────────────────────────────────────────────────
-
     setSubmitting(true);
 
-    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnjbrllk';
-
-    fetch(FORMSPREE_ENDPOINT, {
+    fetch('https://formspree.io/f/xnjbrllk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
@@ -290,7 +237,7 @@ function initContactForm() {
         setTimeout(() => { successEl.hidden = true; }, 8000);
       } else {
         setSubmitting(false);
-        alert('Something went wrong. Please try again or email us directly.');
+        alert('Something went wrong. Please try again or email us directly at info@grandriverdigital.ca');
       }
     })
     .catch(() => {
@@ -322,12 +269,10 @@ function initMockChart() {
   if (!bars.length) return;
 
   bars.forEach(bar => { bar.style.height = '0%'; });
-
   setTimeout(() => {
     bars.forEach((bar, i) => {
       setTimeout(() => {
-        const target = bar.style.getPropertyValue('--h') || '60%';
-        bar.style.height = target;
+        bar.style.height = bar.style.getPropertyValue('--h') || '60%';
       }, i * 80);
     });
   }, 600);
@@ -335,6 +280,9 @@ function initMockChart() {
 
 /* ─── FOOTER YEAR ────────────────────────── */
 function initFooterYear() {
+  qsa('.footer-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
   const el = qs('#footerYear');
   if (el) el.textContent = new Date().getFullYear();
 }
@@ -343,8 +291,8 @@ function initFooterYear() {
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileNav();
-  initReveal();
   initActiveNav();
+  initReveal();
   initSmoothScroll();
   initContactForm();
   initProcessSteps();
