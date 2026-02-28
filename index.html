@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Grand River Digital — Ontario-based web development agency. Performance-focused, conversion-driven websites built for local businesses by analytics and business graduates." />
+  <meta name="theme-color" content="#0B1929" />
+  <meta property="og:title" content="Grand River Digital | Websites That Grow Ontario Businesses" />
+  <meta property="og:description" content="Local service business websites built by Ontario graduates with real analytics and business experience. Guelph, ON." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://foxmatrix78.github.io/grand-river-digital-demo/" />
+  <title>Grand River Digital | Websites That Grow Ontario Businesses</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Grand River Digital",
+    "description": "Ontario-based web development agency specializing in local service businesses.",
+    "areaServed": "Southern Ontario",
+    "address": { "@type": "PostalAddress", "addressLocality": "Guelph", "addressRegion": "ON", "addressCountry": "CA" },
+    "url": "https://foxmatrix78.github.io/grand-river-digital-demo/"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="#hero" class="logo" aria-label="Grand River Digital — home">
+        <div class="logo__mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="8" fill="#2A6049"/>
+            <polyline points="7,26 13,17 19,21 29,10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="29" cy="10" r="2.5" fill="white"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">Grand River</span>
+          <span class="logo__domain">Digital</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list" role="list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#why" class="nav__link">Why Us</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#process" class="nav__link">Process</a></li>
+          <li><a href="#portfolio" class="nav__link">Work</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav__mobile-cta" aria-label="Book a free consultation">Book a Free Consultation</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__cta" aria-label="Book a free consultation">Book a Free Consultation</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__chip reveal" aria-label="Based in Ontario, Canada">
+            <span class="hero__chip-dot" aria-hidden="true"></span>
+            Ontario-Based Web Agency &middot; Guelph, ON
+          </div>
+
+          <h1 id="hero-heading" class="hero__headline reveal">
+            We Build Websites That
+            <span class="hero__headline--accent"> Actually Grow</span>
+            Your Business
+          </h1>
+
+          <p class="hero__sub reveal">
+            Performance-focused, conversion-driven websites built by Ontario-based founders with real analytics and business experience. Not templates. Not guesswork.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--cta" data-label="Book a Free Consultation">
+              Book a Free Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#portfolio" class="btn btn--outline">View Our Work</a>
+          </div>
+
+          <div class="hero__proof-bar reveal" role="list" aria-label="Credibility signals">
+            <div class="hero__proof-item" role="listitem">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ontario-Based Founders
+            </div>
+            <div class="hero__proof-item" role="listitem">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Built for Local Service Businesses
+            </div>
+            <div class="hero__proof-item" role="listitem">
+              <span class="hero__proof-live" aria-hidden="true"></span>
+              3 Live Industry Demos
+            </div>
+            <div class="hero__proof-item" role="listitem">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Response Within 24 Hours
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Browser Mockup -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="browser-mock">
+            <div class="browser-mock__bar">
+              <span class="browser-mock__dot"></span>
+              <span class="browser-mock__dot"></span>
+              <span class="browser-mock__dot"></span>
+              <span class="browser-mock__url">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                grandriverdigital.ca
+              </span>
+            </div>
+            <div class="browser-mock__screen">
+              <div class="mock-nav">
+                <div class="mock-nav__logo"></div>
+                <div class="mock-nav__links">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="mock-nav__btn"></div>
+              </div>
+              <div class="mock-hero-section">
+                <div class="mock-text-group">
+                  <div class="mock-line mock-line--title"></div>
+                  <div class="mock-line mock-line--sub"></div>
+                  <div class="mock-line mock-line--sub mock-line--short"></div>
+                </div>
+                <div class="mock-cta-btn"></div>
+                <div class="mock-chart" aria-hidden="true">
+                  <div class="mock-chart__bar" style="--h:40%"></div>
+                  <div class="mock-chart__bar" style="--h:60%"></div>
+                  <div class="mock-chart__bar" style="--h:50%"></div>
+                  <div class="mock-chart__bar" style="--h:75%"></div>
+                  <div class="mock-chart__bar" style="--h:65%"></div>
+                  <div class="mock-chart__bar" style="--h:90%"></div>
+                </div>
+              </div>
+              <div class="mock-cards-row">
+                <div class="mock-scard"><div class="mock-scard__icon"></div><div class="mock-scard__line"></div><div class="mock-scard__line mock-scard__line--sm"></div></div>
+                <div class="mock-scard"><div class="mock-scard__icon"></div><div class="mock-scard__line"></div><div class="mock-scard__line mock-scard__line--sm"></div></div>
+                <div class="mock-scard"><div class="mock-scard__icon"></div><div class="mock-scard__line"></div><div class="mock-scard__line mock-scard__line--sm"></div></div>
+              </div>
+              <div class="mock-analytics-strip">
+                <div class="mock-stat"><div class="mock-stat__num"></div><div class="mock-stat__label"></div></div>
+                <div class="mock-stat"><div class="mock-stat__num"></div><div class="mock-stat__label"></div></div>
+                <div class="mock-stat"><div class="mock-stat__num"></div><div class="mock-stat__label"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="browser-mock__badge">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            Built for performance &amp; conversion
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SERVICES
+         Removed: Conversion Optimization, Analytics & Tracking Setup
+    ══════════════════════════════════════ -->
+    <section class="section services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2 id="services-heading" class="section-title">Websites Designed for Growth</h2>
+          <p class="section-sub">We build structured digital systems that generate leads, establish credibility, and create measurable results for local businesses across Southern Ontario.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="svc-card svc-card--featured reveal" aria-label="Custom Website Development">
+            <div class="svc-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="svc-card__title">Custom Website Development</h3>
+            <p class="svc-card__desc">Fully custom-built sites tailored to your business goals. Not themes, not drag-and-drop. Built clean, fast, and structured for conversion from the ground up.</p>
+            <ul class="svc-card__bullets" aria-label="What's included">
+              <li>Conversion-focused page structure</li>
+              <li>Mobile-first performance build</li>
+              <li>Semantic, search-ready code</li>
+            </ul>
+            <span class="svc-card__tag">Core Service</span>
+          </article>
+
+          <article class="svc-card reveal" aria-label="Website Redesigns">
+            <div class="svc-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.45"/></svg>
+            </div>
+            <h3 class="svc-card__title">Website Redesigns</h3>
+            <p class="svc-card__desc">Transform an outdated or underperforming site into a high-converting digital asset. Mobile-first, modern, and built around how real users navigate and decide.</p>
+            <ul class="svc-card__bullets" aria-label="What's included">
+              <li>Audit-driven restructure</li>
+              <li>Improved mobile UX and navigation</li>
+              <li>Conversion rate optimization</li>
+            </ul>
+          </article>
+
+          <article class="svc-card reveal" aria-label="Landing Pages">
+            <div class="svc-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="svc-card__title">Landing Pages</h3>
+            <p class="svc-card__desc">Single-purpose, high-impact pages built to convert. Ideal for ad campaigns, service-specific lead generation, or seasonal promotions that need real results.</p>
+            <ul class="svc-card__bullets" aria-label="What's included">
+              <li>Single-purpose conversion architecture</li>
+              <li>Ad-compatible and trackable structure</li>
+              <li>Optimized for one clear action</li>
+            </ul>
+          </article>
+
+          <article class="svc-card reveal" aria-label="SEO Foundations">
+            <div class="svc-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="svc-card__title">SEO Foundations</h3>
+            <p class="svc-card__desc">Every site we build is structured for search from day one. Semantic HTML, page speed, local SEO signals, and schema markup included by default on every project.</p>
+            <ul class="svc-card__bullets" aria-label="What's included">
+              <li>Semantic HTML and heading hierarchy</li>
+              <li>Local citation and area signals</li>
+              <li>Schema markup on every project</li>
+            </ul>
+          </article>
+
+          <article class="svc-card reveal" aria-label="Ongoing Support and Maintenance">
+            <div class="svc-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 class="svc-card__title">Ongoing Support</h3>
+            <p class="svc-card__desc">We don't disappear after launch. Retainer options are available for ongoing updates, performance monitoring, and continued improvements as your business grows.</p>
+            <ul class="svc-card__bullets" aria-label="What's included">
+              <li>Performance and speed monitoring</li>
+              <li>Regular content and copy updates</li>
+              <li>Proactive improvements over time</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         WHY GRAND RIVER DIGITAL
+    ══════════════════════════════════════ -->
+    <section class="section why" id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header section-header--light reveal">
+          <span class="section-label section-label--light">Our Edge</span>
+          <h2 id="why-heading" class="section-title section-title--light">Built by Business &amp; Analytics Graduates. Not Just Designers.</h2>
+          <p class="section-sub section-sub--light">Most web agencies are design studios. We're a two-person firm with graduate-level training in data analytics, financial operations, and structured business thinking, applied directly to web strategy.</p>
+        </div>
+
+        <div class="why__grid">
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="why__title">Analytics-Driven Strategy</h3>
+            <p class="why__desc">Every design and structural decision is grounded in data, not gut feel. We measure what matters and optimize accordingly.</p>
+          </div>
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="why__title">Ontario-Based, Locally Grounded</h3>
+            <p class="why__desc">Raised and educated in Guelph, Ontario. We understand the local market, the local competition, and what Ontario businesses need to win online.</p>
+          </div>
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="why__title">Structured, Predictable Process</h3>
+            <p class="why__desc">Three clear stages. Defined deliverables at each step. You always know where your project stands and what comes next. No surprises.</p>
+          </div>
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="why__title">ROI-First Thinking</h3>
+            <p class="why__desc">Background in financial reporting and business operations means we understand cost, value, and return. We build for outcomes, not just aesthetics.</p>
+          </div>
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="why__title">You Deal With the Founders</h3>
+            <p class="why__desc">No account managers. No junior handoffs. You work directly with Mason and Yick from discovery to launch. The people building your site are the people you talk to.</p>
+          </div>
+
+          <div class="why__card reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="why__title">Clear Communication</h3>
+            <p class="why__desc">Plain language. Documented decisions. 24-hour response times. We respect your time and keep you informed at every stage. No jargon walls.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════ -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Who We Are</span>
+          <h2 id="about-heading" class="section-title">Two Ontario Graduates. One Focused Agency.</h2>
+          <p class="section-sub">Grand River Digital was founded by two Guelph-area graduates who saw a consistent gap: local businesses with strong service offerings held back by weak, underperforming websites. We built an agency to fix that.</p>
+        </div>
+
+        <div class="about__grid">
+
+          <!-- Mason -->
+          <div class="founder-card reveal">
+            <div class="founder-card__header">
+              <div class="founder-card__avatar founder-card__avatar--mason" aria-label="Mason Mazzocco">MM</div>
+              <div class="founder-card__meta">
+                <h3 class="founder-card__name">Mason Mazzocco</h3>
+                <span class="founder-card__role">Technical &amp; Analytics Lead</span>
+              </div>
+            </div>
+            <p class="founder-card__bio">Mason ensures every site we build is backed by real data intelligence, from how pages are structured to how performance is measured and improved over time.</p>
+            <ul class="founder-card__creds" role="list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                MSc Quantitative Analytics, Smith School of Business, Queen's University
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                BComp Honours with Distinction
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Machine learning and predictive analytics experience
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Built analytics pipelines used in Ontario hospital systems
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Expert in Python, R, and SQL data systems
+              </li>
+            </ul>
+            <div class="founder-card__tags" aria-label="Technical specializations">
+              <span>Analytics</span><span>Performance</span><span>Technical SEO</span><span>Data Systems</span>
+            </div>
+          </div>
+
+          <!-- Yick -->
+          <div class="founder-card reveal">
+            <div class="founder-card__header">
+              <div class="founder-card__avatar founder-card__avatar--yick" aria-label="Yick Siang Yau">YY</div>
+              <div class="founder-card__meta">
+                <h3 class="founder-card__name">Yick Siang Yau</h3>
+                <span class="founder-card__role">Business &amp; Implementation Lead</span>
+              </div>
+            </div>
+            <p class="founder-card__bio">Yick manages project delivery, client communication, and structured implementation, bringing the operational discipline of financial management to every web project.</p>
+            <ul class="founder-card__creds" role="list">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                BCom Accounting (Co-op), University of Guelph
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Financial reporting and compliance experience
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Managed financials for multi-million dollar research grants
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Freelance web development since 2022
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Structured project management and documentation
+              </li>
+            </ul>
+            <div class="founder-card__tags" aria-label="Business specializations">
+              <span>Operations</span><span>Project Delivery</span><span>Web Dev</span><span>Business Strategy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about__statement reveal">
+          <svg class="about__statement-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>
+            <strong>Rooted in Guelph, Ontario.</strong> We bring business-first thinking, modern design sensibility, and measurable analytics strategy to every project. A website should be your hardest-working salesperson, not an online brochure.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROCESS
+         Revised: 3 steps, client flexibility messaging
+         Removed: Wireframing & Structure, Launch & Ongoing Support
+    ══════════════════════════════════════ -->
+    <section class="section process" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">How We Work</span>
+          <h2 id="process-heading" class="section-title">Our Process</h2>
+          <p class="section-sub">Three clear stages. You decide how involved you want to be. We can keep you informed at every step or handle things independently. Either way, you always know what's happening.</p>
+        </div>
+
+        <div class="process__flexibility-note reveal" role="note" aria-label="Client involvement note">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <p>Clients can be as involved or hands-off as they prefer. We adapt to your schedule and communication style, not the other way around.</p>
+        </div>
+
+        <div class="process__steps" role="list">
+
+          <div class="process__step reveal" role="listitem">
+            <div class="process__step-num" aria-label="Step 1">01</div>
+            <div class="process__connector" aria-hidden="true"></div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Strategy &amp; Discovery</h3>
+              <p class="process__step-desc">We start with a structured discovery call to understand your business goals, target customers, and what success looks like for you. This drives every decision that follows. You can be as involved as you like from here forward.</p>
+              <div class="process__step-outputs">
+                <span>Goals defined</span><span>Competitor review</span><span>Scope document</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__step reveal" role="listitem">
+            <div class="process__step-num" aria-label="Step 2">02</div>
+            <div class="process__connector" aria-hidden="true"></div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Design &amp; Development</h3>
+              <p class="process__step-desc">Custom design and clean, semantic code built for performance and conversion. We work in review cycles so you can provide feedback throughout, or we can move independently and present a finished build for your approval.</p>
+              <div class="process__step-outputs">
+                <span>Design mockups</span><span>Responsive build</span><span>Content integration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__step reveal" role="listitem">
+            <div class="process__step-num" aria-label="Step 3">03</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Testing &amp; Launch</h3>
+              <p class="process__step-desc">Cross-device and cross-browser testing, speed optimization, and a managed launch. We validate everything before any user sees it and stay available after launch for questions, updates, and ongoing support.</p>
+              <div class="process__step-outputs">
+                <span>QA testing</span><span>Speed audit</span><span>Managed launch</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PORTFOLIO + LIVE DEMOS
+    ══════════════════════════════════════ -->
+    <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="section-label">Recent Work</span>
+          <h2 id="portfolio-heading" class="section-title">Built for Real Business Outcomes</h2>
+          <p class="section-sub">Every project starts with a goal and ends with a measurement. Here's a selection of work we've delivered for local Ontario businesses.</p>
+        </div>
+
+        <div class="portfolio__grid">
+
+          <article class="pcard reveal" aria-label="Summit Roofing project">
+            <div class="pcard__visual pcard__visual--1" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">Contractor Website</span>
+              <h3 class="pcard__title">Summit Roofing Co.</h3>
+              <p class="pcard__outcome-tag">Designed for emergency click-to-call optimization and high-intent local search capture</p>
+              <p class="pcard__outcome">Custom lead generation site with structured service pages, local SEO foundations, and contact form optimization built to capture high-intent search traffic.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard reveal" aria-label="Greenscape Landscaping project">
+            <div class="pcard__visual pcard__visual--2" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">Website Redesign</span>
+              <h3 class="pcard__title">Greenscape Landscaping</h3>
+              <p class="pcard__outcome-tag">Built to increase quote requests through structured seasonal service pages and local area targeting</p>
+              <p class="pcard__outcome">Full redesign of an outdated site. Mobile-first rebuild, improved page structure, local service area pages, and integrated quote request flow.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard reveal" aria-label="FixRight Plumbing project">
+            <div class="pcard__visual pcard__visual--3" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">Landing Page</span>
+              <h3 class="pcard__title">FixRight Plumbing</h3>
+              <p class="pcard__outcome-tag">Conversion-focused emergency layout engineered for maximum click-to-call rate</p>
+              <p class="pcard__outcome">High-conversion emergency services landing page with optimized headline structure, click-to-call prominence, trust indicators, and Google Ads compatibility.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard reveal" aria-label="Welland Medical Centre project">
+            <div class="pcard__visual pcard__visual--4" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">Healthcare Website</span>
+              <h3 class="pcard__title">Welland Medical Centre</h3>
+              <p class="pcard__outcome-tag">Structured for patient trust, accessibility compliance, and frictionless booking integration</p>
+              <p class="pcard__outcome">Accessible, WCAG-compliant patient information portal with structured service pages, online booking integration, and a clean mobile experience for all ages.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard reveal" aria-label="Atlas Construction project">
+            <div class="pcard__visual pcard__visual--5" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">Portfolio + Lead Gen</span>
+              <h3 class="pcard__title">Atlas Construction</h3>
+              <p class="pcard__outcome-tag">Designed to increase estimate submissions with a structured project portfolio and conversion form</p>
+              <p class="pcard__outcome">Project portfolio site with a structured estimating form, before/after image galleries, and a conversion-optimized contact flow built to win larger bids.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+          <article class="pcard reveal" aria-label="Premier HVAC project">
+            <div class="pcard__visual pcard__visual--6" aria-hidden="true">
+              <div class="pcard__mock">
+                <div class="pcard__mock-bar"></div>
+                <div class="pcard__mock-hero"></div>
+                <div class="pcard__mock-row">
+                  <div class="pcard__mock-block"></div>
+                  <div class="pcard__mock-block"></div>
+                </div>
+                <div class="pcard__mock-lines">
+                  <div class="pcard__mock-line"></div>
+                  <div class="pcard__mock-line pcard__mock-line--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pcard__body">
+              <span class="pcard__type">SEO + Website</span>
+              <h3 class="pcard__title">Premier HVAC Services</h3>
+              <p class="pcard__outcome-tag">Conversion-focused service pages with local area targeting and monthly performance reporting</p>
+              <p class="pcard__outcome">Custom site with SEO-structured service pages for Guelph and surrounding areas, Google Business integration, and a monthly performance reporting dashboard.</p>
+              <a href="#contact" class="pcard__cta" aria-label="Request a similar site">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ══════════════════════════════════════
+             LIVE DEMOS
+             These are fully deployed, live sites showing
+             our local service business specialization.
+        ══════════════════════════════════════ -->
+        <div class="demos-panel">
+
+          <div class="demos-panel__header reveal">
+            <span class="section-label">Live Demos</span>
+            <h3 class="demos-panel__title">See Our Specialty in Action</h3>
+            <p class="demos-panel__sub">We specialize in local service business websites. These are fully live, functional sites built for real lead generation. Click through and experience them directly.</p>
+          </div>
+
+          <p class="demos-panel__intro reveal">These are real demo builds created specifically for local service businesses. We can build one tailored to your company before you commit.</p>
+
+          <div class="demos__grid">
+
+            <article class="demo-card reveal" aria-label="Tri-City Electrical live demo">
+              <div class="demo-card__top">
+                <span class="demo-card__live-badge">
+                  <span class="demo-card__live-dot" aria-hidden="true"></span>
+                  Live Site
+                </span>
+                <div class="demo-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+              </div>
+              <div class="demo-card__body">
+                <span class="demo-card__industry">Electrical</span>
+                <h4 class="demo-card__name">Tri-City Electrical</h4>
+                <p class="demo-card__desc">High-converting local service layout built for lead generation. Emergency CTA prominence, strong trust signals, and a mobile-first structure designed to drive calls.</p>
+              </div>
+              <a href="#contact" class="demo-card__want" aria-label="Request a site like Tri-City Electrical">Want one like this? Let's talk &#x2192;</a>
+              <a href="https://foxmatrix78.github.io/tri-city-electrical-demo/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="demo-card__link"
+                 aria-label="View Tri-City Electrical live demo, opens in new tab">
+                View Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </article>
+
+            <article class="demo-card reveal" aria-label="Evergreen Landscaping live demo">
+              <div class="demo-card__top">
+                <span class="demo-card__live-badge">
+                  <span class="demo-card__live-dot" aria-hidden="true"></span>
+                  Live Site
+                </span>
+                <div class="demo-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c1.77.93 3.88 1.14 5.68.5C11 19 12.17 17.65 13 16c1.27-2.37 3-4 4-6 2 .5 4 2 4 5.5 0 3-2 5-5 5s-5-2-5-5c0-1 .4-2 1-3"/></svg>
+                </div>
+              </div>
+              <div class="demo-card__body">
+                <span class="demo-card__industry">Landscaping</span>
+                <h4 class="demo-card__name">Evergreen Landscaping</h4>
+                <p class="demo-card__desc">Visually premium service site with seasonal service highlights, quote request flow, and local SEO structure. Built to convert homeowners researching landscaping services.</p>
+              </div>
+              <a href="#contact" class="demo-card__want" aria-label="Request a site like Evergreen Landscaping">Want one like this? Let's talk &#x2192;</a>
+              <a href="https://foxmatrix78.github.io/evergreen-landscaping-demo/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="demo-card__link"
+                 aria-label="View Evergreen Landscaping live demo, opens in new tab">
+                View Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </article>
+
+            <article class="demo-card reveal" aria-label="RapidFlow Plumbing live demo">
+              <div class="demo-card__top">
+                <span class="demo-card__live-badge">
+                  <span class="demo-card__live-dot" aria-hidden="true"></span>
+                  Live Site
+                </span>
+                <div class="demo-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 0-7 6.5-7 11.5a7 7 0 0 0 14 0C19 8.5 12 2 12 2z"/></svg>
+                </div>
+              </div>
+              <div class="demo-card__body">
+                <span class="demo-card__industry">Plumbing</span>
+                <h4 class="demo-card__name">RapidFlow Plumbing</h4>
+                <p class="demo-card__desc">24/7 emergency plumbing site built for urgent lead capture. 60-minute response messaging, click-to-call throughout, trust indicators, and a frictionless service request form.</p>
+              </div>
+              <a href="#contact" class="demo-card__want" aria-label="Request a site like RapidFlow Plumbing">Want one like this? Let's talk &#x2192;</a>
+              <a href="https://foxmatrix78.github.io/rapidflow-plumbing-demo/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="demo-card__link"
+                 aria-label="View RapidFlow Plumbing live demo, opens in new tab">
+                View Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </article>
+
+          </div>
+
+          <div class="demos-panel__footer reveal">
+            <p>These demos show exactly what we build for local service businesses. Want something like this for your business?</p>
+            <a href="#contact" class="btn btn--cta">Book a Free Consultation</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="hero__grid" aria-hidden="true" style="opacity:.4;"></div>
+      <div class="container contact__inner">
+
+        <div class="contact__info reveal">
+          <span class="section-label section-label--light">Get in Touch</span>
+          <h2 id="contact-heading" class="contact__headline">Let's Build Something That Works</h2>
+          <p class="contact__sub">Book a free 30-minute consultation. We'll review your current site (or lack of one), discuss your business goals, and give you a clear picture of what we'd build and why.</p>
+
+          <div class="contact__reassurance">
+            <div class="contact__reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Typically responding within 24 hours</span>
+            </div>
+            <div class="contact__reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>No pressure. Just clarity on what's possible.</span>
+            </div>
+            <div class="contact__reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Based in Guelph, ON &middot; Serving all of Southern Ontario</span>
+            </div>
+          </div>
+
+          <div class="contact__founders-note">
+            <div class="contact__founders-avatars" aria-hidden="true">
+              <span class="contact__founders-avatar contact__founders-avatar--mason">MM</span>
+              <span class="contact__founders-avatar contact__founders-avatar--yick">YY</span>
+            </div>
+            <p>You'll hear directly from <strong>Mason or Yick</strong>. Not an automated system.</p>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal">
+          <div class="contact__next-steps" aria-label="What happens next">
+            <p class="contact__next-label">What happens next?</p>
+            <ol class="contact__next-list">
+              <li>
+                <span class="contact__next-num" aria-hidden="true">1</span>
+                <span>A 30-minute strategy call to understand your business and goals</span>
+              </li>
+              <li>
+                <span class="contact__next-num" aria-hidden="true">2</span>
+                <span>Clear, specific recommendations tailored to your situation</span>
+              </li>
+              <li>
+                <span class="contact__next-num" aria-hidden="true">3</span>
+                <span>No pressure, no obligation. Just honest advice.</span>
+              </li>
+            </ol>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate aria-label="Consultation booking form">
+            <div class="form-group">
+              <label for="cname">Your Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="cname" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="cemail" name="email" placeholder="jane@yourbusiness.ca" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="cbusiness">Business Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="cbusiness" name="business" placeholder="Smith Contracting Inc." required autocomplete="organization" />
+            </div>
+            <div class="form-group">
+              <label for="cdesc">Project Description</label>
+              <textarea id="cdesc" name="description" rows="4" placeholder="Tell us about your business and what you're looking to achieve with your website..." autocomplete="off"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="cbudget">Budget Range</label>
+              <select id="cbudget" name="budget" autocomplete="off">
+                <option value="">Select a budget range</option>
+                <option value="500-750">$500 &#x2013; $750</option>
+                <option value="750-1250">$750 &#x2013; $1,250</option>
+                <option value="1250-2000">$1,250 &#x2013; $2,000</option>
+                <option value="2000-plus">$2,000+</option>
+                <option value="not-sure">Not Sure Yet</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--cta btn--full" data-label="Book a Free Consultation">
+              Book a Free Consultation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form-note">Typically responding within 24 hours. No pressure. Just clarity.</p>
+            <div class="form-success" id="formSuccess" hidden role="alert">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <div>
+                <strong>Message received.</strong> Mason or Yick will be in touch within 24 hours.
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer" aria-label="Grand River Digital — back to top">
+          <div class="logo__mark" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="8" fill="#2A6049"/>
+              <polyline points="7,26 13,17 19,21 29,10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="29" cy="10" r="2.5" fill="white"/>
+            </svg>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">Grand River</span>
+            <span class="logo__domain">Digital</span>
+          </div>
+        </a>
+        <p class="footer__tagline">Websites that actually grow your business.</p>
+        <p class="footer__location">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Guelph, Ontario &middot; Serving Southern Ontario
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__col-heading">Services</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="#services">Custom Web Development</a></li>
+          <li><a href="#services">Website Redesigns</a></li>
+          <li><a href="#services">Landing Pages</a></li>
+          <li><a href="#services">SEO Foundations</a></li>
+          <li><a href="#services">Ongoing Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__col-heading">Company</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="#why">Why Grand River Digital</a></li>
+          <li><a href="#about">About the Team</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#portfolio">Recent Work</a></li>
+          <li><a href="#contact">Book a Free Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__col-heading">Get in Touch</h3>
+        <ul class="footer__contact-list" role="list">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Guelph, Ontario, Canada
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Response within 24 hours
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>&copy; <span id="footerYear">2025</span> Grand River Digital. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
