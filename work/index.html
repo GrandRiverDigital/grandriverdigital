@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Our Work — Grand River Digital portfolio. Conversion-focused websites built for Ontario local service businesses, including live demos for electrical, landscaping, and plumbing industries." />
+  <meta name="description" content="Our Work — Grand River Digital. Portfolio and three live industry demos for local Ontario service businesses. Electrical, landscaping, and plumbing." />
   <meta name="theme-color" content="#0B1929" />
   <meta property="og:title" content="Our Work | Grand River Digital" />
-  <meta property="og:description" content="Portfolio and live demos from Grand River Digital — websites built for real lead generation and business growth across Southern Ontario." />
+  <meta property="og:description" content="Live demos and portfolio from Grand River Digital — built for real lead generation across Southern Ontario." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://grandriverdigital.ca/work" />
   <link rel="canonical" href="https://grandriverdigital.ca/work" />
   <title>Our Work | Grand River Digital</title>
-  <link rel="stylesheet" href="/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- HEADER -->
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="/" class="logo" aria-label="Grand River Digital — home">
@@ -36,7 +37,6 @@
           <span class="logo__domain">Digital</span>
         </div>
       </a>
-
       <nav class="nav" id="nav" aria-label="Main navigation">
         <ul class="nav__list" role="list">
           <li><a href="/" class="nav__link">Home</a></li>
@@ -46,9 +46,7 @@
         </ul>
         <a href="/contact" class="nav__mobile-cta">Book a Free Consultation</a>
       </nav>
-
       <a href="/contact" class="btn btn--primary header__cta">Book a Free Consultation</a>
-
       <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
@@ -69,19 +67,19 @@
           <span aria-current="page">Work</span>
         </nav>
         <h1 id="page-hero-heading" class="page-hero__title">
-          Built for <span>Real Business Outcomes</span>
+          Built for <span>Real Outcomes</span>
         </h1>
-        <p class="page-hero__sub">Every project starts with a goal and ends with a measurement. Below is a selection of work we've delivered, plus three fully live industry demos you can explore directly.</p>
+        <p class="page-hero__sub">Selected project work and three fully live demos. Click through the demos — experience the mobile layout, test the forms, see what a high-converting local service site actually feels like.</p>
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
+    <!-- PORTFOLIO GRID -->
     <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-heading">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-label">Project Portfolio</span>
-          <h2 id="portfolio-heading" class="section-title">Selected Work</h2>
-          <p class="section-sub">Local Ontario businesses across a range of service industries. Each project is built around a specific conversion goal.</p>
+          <span class="section-label">Selected Projects</span>
+          <h2 id="portfolio-heading" class="section-title">Project Portfolio</h2>
+          <p class="section-sub">Local Ontario businesses across a range of service industries. Every project anchored to a specific conversion goal.</p>
         </div>
 
         <div class="portfolio__grid">
@@ -97,9 +95,12 @@
             <div class="pcard__body">
               <span class="pcard__type">Contractor Website</span>
               <h3 class="pcard__title">Summit Roofing Co.</h3>
-              <p class="pcard__outcome-tag">Emergency click-to-call optimization + local search capture</p>
-              <p class="pcard__outcome">Custom lead generation site with structured service pages, local SEO foundations, and contact form optimization built to capture high-intent search traffic.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Emergency click-to-call + local search capture</p>
+              <p class="pcard__outcome">Custom lead generation site with structured service pages, local SEO foundations, and contact form optimization built for high-intent search traffic.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
 
@@ -115,9 +116,12 @@
             <div class="pcard__body">
               <span class="pcard__type">Website Redesign</span>
               <h3 class="pcard__title">Greenscape Landscaping</h3>
-              <p class="pcard__outcome-tag">Quote requests via seasonal service pages + local area targeting</p>
-              <p class="pcard__outcome">Full redesign of an outdated site. Mobile-first rebuild, improved page structure, local service area pages, and integrated quote request flow.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Quote requests + seasonal service page targeting</p>
+              <p class="pcard__outcome">Full redesign of an outdated site. Mobile-first rebuild, restructured page hierarchy, local service area pages, integrated quote request flow.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
 
@@ -133,9 +137,12 @@
             <div class="pcard__body">
               <span class="pcard__type">Landing Page</span>
               <h3 class="pcard__title">FixRight Plumbing</h3>
-              <p class="pcard__outcome-tag">Maximum click-to-call conversion rate for emergency services</p>
-              <p class="pcard__outcome">High-conversion emergency services landing page with optimized headline structure, click-to-call prominence, trust indicators, and Google Ads compatibility.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Maximum click-to-call for emergency services</p>
+              <p class="pcard__outcome">Emergency services landing page with optimized headline structure, click-to-call prominence, trust indicators, and Google Ads compatibility.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
 
@@ -151,9 +158,12 @@
             <div class="pcard__body">
               <span class="pcard__type">Healthcare Website</span>
               <h3 class="pcard__title">Welland Medical Centre</h3>
-              <p class="pcard__outcome-tag">Patient trust + accessibility compliance + frictionless booking</p>
-              <p class="pcard__outcome">Accessible, WCAG-compliant patient information portal with structured service pages, online booking integration, and a clean mobile experience for all ages.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Patient trust + accessibility + frictionless booking</p>
+              <p class="pcard__outcome">Accessible, WCAG-compliant patient portal with structured service pages, online booking integration, and a clean mobile experience for all ages.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
 
@@ -169,9 +179,12 @@
             <div class="pcard__body">
               <span class="pcard__type">Portfolio + Lead Gen</span>
               <h3 class="pcard__title">Atlas Construction</h3>
-              <p class="pcard__outcome-tag">Estimate submissions via structured portfolio + conversion form</p>
-              <p class="pcard__outcome">Project portfolio site with a structured estimating form, before/after image galleries, and a conversion-optimized contact flow built to win larger bids.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Estimate submissions via structured portfolio</p>
+              <p class="pcard__outcome">Project portfolio site with estimating form, before/after image galleries, and a conversion-optimized contact flow built to win larger bids.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
 
@@ -187,99 +200,97 @@
             <div class="pcard__body">
               <span class="pcard__type">SEO + Website</span>
               <h3 class="pcard__title">Premier HVAC Services</h3>
-              <p class="pcard__outcome-tag">Local area service pages + monthly performance reporting</p>
-              <p class="pcard__outcome">Custom site with SEO-structured service pages for Guelph and surrounding areas, Google Business integration, and a monthly performance reporting dashboard.</p>
-              <a href="/contact" class="pcard__cta">Request a Site Like This <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <p class="pcard__outcome-tag">Local area pages + monthly performance reporting</p>
+              <p class="pcard__outcome">Custom site with SEO-structured service pages for Guelph and surrounding areas, Google Business integration, and a monthly performance dashboard.</p>
+              <a href="/contact" class="pcard__cta">
+                Request a site like this
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- LIVE DEMOS -->
-    <section class="section portfolio" id="demos" aria-labelledby="demos-heading">
+    <!-- LIVE DEMOS — full-bleed primary section -->
+    <section class="demos" id="demos" aria-labelledby="demos-heading">
       <div class="container">
-        <div class="demos-panel">
-          <div class="demos-panel__header reveal">
-            <span class="section-label section-label--light">Live Demos</span>
-            <h2 id="demos-heading" class="demos-panel__title">See Our Specialty in Action</h2>
-            <p class="demos-panel__sub">We specialize in local service business websites. These are fully live, functional sites built for real lead generation. Click through and experience them directly.</p>
-          </div>
+        <div class="section-header section-header--light reveal">
+          <span class="section-label section-label--light">Live &amp; Clickable</span>
+          <h2 id="demos-heading" class="section-title section-title--light">Three Live Industry Demos</h2>
+          <p class="section-sub section-sub--light">Not mockups. Not screenshots. Fully functional sites built for local service businesses — click through, test on mobile, check the forms. This is production-grade work.</p>
+        </div>
 
-          <p class="demos-panel__intro reveal">These are real demo builds created specifically for local service businesses. We can build one tailored to your company before you commit.</p>
+        <div class="demos__grid">
 
-          <div class="demos__grid">
-            <article class="demo-card reveal" aria-label="Tri-City Electrical live demo">
-              <div class="demo-card__top">
-                <span class="demo-card__live-badge">
-                  <span class="demo-card__live-dot" aria-hidden="true"></span>
-                  Live Site
-                </span>
-                <div class="demo-card__icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                </div>
-              </div>
-              <div class="demo-card__body">
-                <span class="demo-card__industry">Electrical</span>
-                <h3 class="demo-card__name">Tri-City Electrical</h3>
-                <p class="demo-card__desc">High-converting local service layout built for lead generation. Emergency CTA prominence, strong trust signals, and a mobile-first structure designed to drive calls.</p>
-              </div>
-              <a href="/contact" class="demo-card__want">Want one like this? Let's talk &#x2192;</a>
-              <a href="https://grandriverdigital.github.io/tri-city-electrical-demo" target="_blank" rel="noopener noreferrer" class="demo-card__link" aria-label="View Tri-City Electrical live demo, opens in new tab">
-                View Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </article>
+          <article class="demo-card reveal" aria-label="Tri-City Electrical — live demo">
+            <div class="demo-card__meta">
+              <span class="demo-card__industry">Electrical</span>
+              <span class="demo-card__live">
+                <span class="demo-card__live-dot" aria-hidden="true"></span>
+                Live
+              </span>
+            </div>
+            <h3 class="demo-card__name">Tri-City Electrical</h3>
+            <p class="demo-card__desc">High-converting local service layout built for lead generation. Emergency CTA hierarchy, strong trust signals, and a mobile-first structure optimised to drive inbound calls.</p>
+            <a href="https://grandriverdigital.github.io/tri-city-electrical-demo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="demo-card__link"
+               aria-label="View Tri-City Electrical live demo, opens in new tab">
+              View Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </article>
 
-            <article class="demo-card reveal" aria-label="Evergreen Landscaping live demo">
-              <div class="demo-card__top">
-                <span class="demo-card__live-badge">
-                  <span class="demo-card__live-dot" aria-hidden="true"></span>
-                  Live Site
-                </span>
-                <div class="demo-card__icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c1.77.93 3.88 1.14 5.68.5C11 19 12.17 17.65 13 16c1.27-2.37 3-4 4-6 2 .5 4 2 4 5.5 0 3-2 5-5 5s-5-2-5-5c0-1 .4-2 1-3"/></svg>
-                </div>
-              </div>
-              <div class="demo-card__body">
-                <span class="demo-card__industry">Landscaping</span>
-                <h3 class="demo-card__name">Evergreen Landscaping</h3>
-                <p class="demo-card__desc">Visually premium service site with seasonal service highlights, quote request flow, and local SEO structure. Built to convert homeowners researching landscaping services.</p>
-              </div>
-              <a href="/contact" class="demo-card__want">Want one like this? Let's talk &#x2192;</a>
-              <a href="https://grandriverdigital.github.io/evergreen-landscaping-demo" target="_blank" rel="noopener noreferrer" class="demo-card__link" aria-label="View Evergreen Landscaping live demo, opens in new tab">
-                View Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </article>
+          <article class="demo-card reveal" aria-label="Evergreen Landscaping — live demo">
+            <div class="demo-card__meta">
+              <span class="demo-card__industry">Landscaping</span>
+              <span class="demo-card__live">
+                <span class="demo-card__live-dot" aria-hidden="true"></span>
+                Live
+              </span>
+            </div>
+            <h3 class="demo-card__name">Evergreen Landscaping</h3>
+            <p class="demo-card__desc">Visually premium service site with seasonal highlights, a quote request flow, and local SEO structure — built to convert homeowners actively comparing landscaping services.</p>
+            <a href="https://grandriverdigital.github.io/evergreen-landscaping-demo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="demo-card__link"
+               aria-label="View Evergreen Landscaping live demo, opens in new tab">
+              View Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </article>
 
-            <article class="demo-card reveal" aria-label="RapidFlow Plumbing live demo">
-              <div class="demo-card__top">
-                <span class="demo-card__live-badge">
-                  <span class="demo-card__live-dot" aria-hidden="true"></span>
-                  Live Site
-                </span>
-                <div class="demo-card__icon" aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 0-7 6.5-7 11.5a7 7 0 0 0 14 0C19 8.5 12 2 12 2z"/></svg>
-                </div>
-              </div>
-              <div class="demo-card__body">
-                <span class="demo-card__industry">Plumbing</span>
-                <h3 class="demo-card__name">RapidFlow Plumbing</h3>
-                <p class="demo-card__desc">24/7 emergency plumbing site built for urgent lead capture. 60-minute response messaging, click-to-call throughout, trust indicators, and a frictionless service request form.</p>
-              </div>
-              <a href="/contact" class="demo-card__want">Want one like this? Let's talk &#x2192;</a>
-              <a href="https://grandriverdigital.github.io/rapidflow-plumbing-demo" target="_blank" rel="noopener noreferrer" class="demo-card__link" aria-label="View RapidFlow Plumbing live demo, opens in new tab">
-                View Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </article>
-          </div>
+          <article class="demo-card reveal" aria-label="RapidFlow Plumbing — live demo">
+            <div class="demo-card__meta">
+              <span class="demo-card__industry">Plumbing</span>
+              <span class="demo-card__live">
+                <span class="demo-card__live-dot" aria-hidden="true"></span>
+                Live
+              </span>
+            </div>
+            <h3 class="demo-card__name">RapidFlow Plumbing</h3>
+            <p class="demo-card__desc">24/7 emergency plumbing site built for urgent lead capture. 60-minute response messaging, click-to-call throughout, and a frictionless service request form above the fold.</p>
+            <a href="https://grandriverdigital.github.io/rapidflow-plumbing-demo"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="demo-card__link"
+               aria-label="View RapidFlow Plumbing live demo, opens in new tab">
+              View Live Demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </article>
 
-          <div class="demos-panel__footer reveal">
-            <p>These demos show exactly what we build for local service businesses. Want something like this for yours?</p>
-            <a href="/contact" class="btn btn--cta">Book a Free Consultation</a>
-          </div>
+        </div>
+
+        <div class="demos__cta-row reveal">
+          <p>Want something built like this for your business? Let's start with a free 30-minute strategy call.</p>
+          <a href="/contact" class="btn btn--cta">
+            Book a Free Consultation
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -290,21 +301,20 @@
       <div class="container cta-strip__inner">
         <span class="cta-strip__eyebrow">Start Your Project</span>
         <h2 id="cta-work-heading" class="cta-strip__title reveal">Like What You See?</h2>
-        <p class="cta-strip__sub reveal">We can build something just like this — or better — for your business. Let's start with a free 30-minute strategy call to map it out.</p>
+        <p class="cta-strip__sub reveal">We can build something like this — or better — for your business. Free 30-minute strategy call. No pressure, no obligation.</p>
         <div class="cta-strip__actions reveal">
           <a href="/contact" class="btn btn--cta">
             Book a Free Consultation
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="/about" class="btn btn--outline">Learn About Us</a>
+          <a href="/about" class="btn btn--outline">Meet the Team</a>
         </div>
-        <p class="cta-strip__note">Typically responding within 24 hours &middot; Guelph, ON &middot; Serving all of Southern Ontario</p>
+        <p class="cta-strip__note">Within 24 hours &middot; Guelph, ON &middot; Serving all of Southern Ontario</p>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -316,10 +326,7 @@
               <circle cx="29" cy="10" r="2.5" fill="white"/>
             </svg>
           </div>
-          <div class="logo__text">
-            <span class="logo__name">Grand River</span>
-            <span class="logo__domain">Digital</span>
-          </div>
+          <div class="logo__text"><span class="logo__name">Grand River</span><span class="logo__domain">Digital</span></div>
         </a>
         <p class="footer__tagline">Websites that actually grow your business.</p>
         <p class="footer__location">
@@ -330,21 +337,21 @@
       <div class="footer__col">
         <h3 class="footer__col-heading">Services</h3>
         <ul class="footer__links" role="list">
-          <li><a href="/about#services">Custom Web Development</a></li>
-          <li><a href="/about#services">Website Redesigns</a></li>
-          <li><a href="/about#services">Landing Pages</a></li>
-          <li><a href="/about#services">SEO Foundations</a></li>
-          <li><a href="/about#services">Ongoing Support</a></li>
+          <li><a href="/about">Custom Web Development</a></li>
+          <li><a href="/about">Website Redesigns</a></li>
+          <li><a href="/about">Landing Pages</a></li>
+          <li><a href="/about">SEO Foundations</a></li>
+          <li><a href="/about">Ongoing Support</a></li>
         </ul>
       </div>
       <div class="footer__col">
         <h3 class="footer__col-heading">Company</h3>
         <ul class="footer__links" role="list">
           <li><a href="/about">About the Team</a></li>
-          <li><a href="/about#why">Why Grand River Digital</a></li>
-          <li><a href="/about#process">Our Process</a></li>
-          <li><a href="/work">Recent Work</a></li>
-          <li><a href="/contact">Book a Free Consultation</a></li>
+          <li><a href="/about">Why Grand River Digital</a></li>
+          <li><a href="/about">Our Process</a></li>
+          <li><a href="/work">Portfolio &amp; Demos</a></li>
+          <li><a href="/contact">Book a Consultation</a></li>
         </ul>
       </div>
       <div class="footer__col">
