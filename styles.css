@@ -1940,3 +1940,24 @@ button {
   .header, .nav-toggle, .footer { display: none; }
   body { background: white; color: black; }
 }
+
+/* ─── FOUNDER LINKEDIN LINK ─── */
+.founder-card__linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #10B981;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.founder-card__linkedin:hover { opacity: 0.75; }
+
+/* ─── ORIGIN SECTION ─── */
+.origin-section { background: var(--surface, #111827); border-top: 1px solid var(--border, #1F2937); border-bottom: 1px solid var(--border, #1F2937); }
+.origin-inner { max-width: 720px; margin: 0 auto; text-align: center; }
+.origin-content .section-title { margin-bottom: 2rem; }
+.origin-text { font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary, #9CA3AF); margin-bottom: 1.2rem; }
+.origin-text:last-child { margin-bottom: 0; }
